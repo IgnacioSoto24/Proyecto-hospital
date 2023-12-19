@@ -14,13 +14,13 @@
     <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
       <div class="col-md-3 mb-2 mb-md-0">
         <a href="#" class="d-inline-flex link-body-emphasis text-decoration-none">
-        <div class="col-6 mb-2"><img src="img/hospital.png" width="150px" height="95px"></div>
+        <div class="col-6 mb-2"><img src="img/logohospital.png" width="150px" height="100px"></div>
         </a>
       </div>
       <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
         <li><a href="pagina_principal.php" class="nav-link px-2">Inicio</a></li>
-        <li><a href="#" class="nav-link px-2">Features</a></li>
-        <li><a href="#" class="nav-link px-2">Pricing</a></li>
+        <li><a href="#" class="nav-link px-2">Medicos</a></li>
+        <li><a href="#" class="nav-link px-2">Resultados</a></li>
         <li><a href="#" class="nav-link px-2">FAQs</a></li>
         <li><a href="#" class="nav-link px-2">About</a></li>
       </ul>

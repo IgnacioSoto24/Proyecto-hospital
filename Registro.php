@@ -19,8 +19,8 @@
       </div>
       <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
         <li><a href="pagina_principal.php" class="nav-link px-2">Inicio</a></li>
-        <li><a href="#" class="nav-link px-2">Features</a></li>
-        <li><a href="#" class="nav-link px-2">Pricing</a></li>
+        <li><a href="#" class="nav-link px-2">Medicos</a></li>
+        <li><a href="#" class="nav-link px-2">Resultados</a></li>
         <li><a href="#" class="nav-link px-2">FAQs</a></li>
         <li><a href="#" class="nav-link px-2">About</a></li>
       </ul>
@@ -58,8 +58,8 @@
                             <label for="Contraseña"><FONT COLOR="#FFFFFF"> Contraseña: </FONT></label>
                             <input type="password" class="form-control" name="contraseña" id="contraseña" required>
                             <br>
-                            <button type="submit" class="btn btn-secondary">Registrarse</button>
                             <a href = "Inicio_sesion.php"><button type="button" class="btn btn-secondary">Volver</button></a>
+                            <a href = "pagina_principal.php"><button type="button" class="btn btn-secondary">Volver</button></a>
                         </form>
                     </div>
                 </div>
