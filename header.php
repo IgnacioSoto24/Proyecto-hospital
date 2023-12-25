@@ -21,8 +21,6 @@
         <li><a href="pagina_principal.php" class="nav-link px-2">Inicio</a></li>
         <li><a href="#" class="nav-link px-2">Medicos</a></li>
         <li><a href="#" class="nav-link px-2">Resultados</a></li>
-        <li><a href="#" class="nav-link px-2">FAQs</a></li>
-        <li><a href="#" class="nav-link px-2">About</a></li>
       </ul>
 
       <div class="col-md-3 text-end">

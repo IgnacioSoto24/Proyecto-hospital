@@ -4,7 +4,7 @@
 
 $db_host = "localhost";
 
-$db_name = "hospital_salud_plus";
+$db_name = "hospital_salud_plus_final";
 
 $db_user = "root";
 
@@ -14,3 +14,4 @@ $conexion = mysqli_connect($db_host, $db_user, $db_pass, $db_name);
 if(!$conexion){
     die("Conexion fallida: " . mysqli_connect_error());
 }
+?>

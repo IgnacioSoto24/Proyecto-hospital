@@ -19,9 +19,23 @@
     ?>
 </head>
 <body>
-<?php
-  include_once("header.php");
-?>
+<div class="container">
+    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+      <div class="col-md-3 mb-2 mb-md-0">
+        <a href="#" class="d-inline-flex link-body-emphasis text-decoration-none">
+        <div class="col-6 mb-2"><img src="img/logohospital.png" width="150px" height="100px"></div>
+        </a>
+      </div>
+      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+        <li><a href="pagina_principal.php" class="nav-link px-2">Inicio</a></li>
+        <li><a class="nav-link" href="medicoServicios.php">Servicios</a></li>
+      </ul>
+      <div class="col-md-3 text-end">
+        <a class="btn btn-primary" href="Inicio_sesion.php" role="button">Ingresar</a>
+        <a class="btn btn-primary" href="Registro.php" role="button">Registrarse</a>
+        <a class="btn btn-primary" href="cerrar_sesion.php" role="button">Cerrar sesión</a>
+      </div>
+    </header>
 <div class="row">
 <div class="col mt-4 d-flex justify-content-center">
     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
