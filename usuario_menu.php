@@ -27,14 +27,15 @@
         </a>
       </div>
       <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-        <li><a href="medico_menu.php" class="nav-link px-2">Inicio</a></li>
+        <li><a href="usuario_menu.php" class="nav-link px-2">Inicio</a></li>
+        <li><a class="nav-link" href="#">Ver perfil</a></li>
         <li><a class="nav-link" href="#">Servicios</a></li>
       </ul>
       <div class="col-md-3 text-end">
         <a class="btn btn-primary" href="cerrar_sesion.php" role="button">Cerrar sesión</a>
       </div>
     </header>
-<div class="row">
+    <div class="row">
 <div class="col mt-4 d-flex justify-content-center">
     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
