@@ -18,9 +18,7 @@
         </a>
       </div>
       <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-        <li><a href="pagina_principal.php" class="nav-link px-2">Inicio</a></li>
-        <li><a href="#" class="nav-link px-2">Medicos</a></li>
-        <li><a href="#" class="nav-link px-2">Resultados</a></li>
+        <li><a href="index.php" class="nav-link px-2">Inicio</a></li>
       </ul>
 
       <div class="col-md-3 text-end">

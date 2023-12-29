@@ -10,6 +10,9 @@
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </head>
 <body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+<div class="container-fluid" style="background-color: #D3D3D3">
 <?php
   include_once("header.php");
 ?>
@@ -20,7 +23,7 @@
                 <div class="row border rounded" style="height: 350px; background-color: #BA181B">
                     <div class="col-12 mt-2 d-flex justify-content-center"><FONT COLOR="#FFFFFF">Inicio sesión </FONT></div>
                     <div class="col mt-2 d-flex justify-content-center">
-                        <form action="ingresarCodigo.php" method="POST">
+                        <form action="inicio_sesionCod.php" method="POST">
                             <label"><FONT COLOR="#FFFFFF"> Rut: </FONT></label>
                             <input type="text" class="form-control" name="Rut" maxlength="11" id="Rut" placeholder="12345678-k"/>
                             <br><br>
