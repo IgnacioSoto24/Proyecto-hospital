@@ -50,7 +50,7 @@
 <body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
-<div class="container-fluid" style="background-color: #D3D3D3">
+
 <div class="container">
     <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
       <div class="col-md-3 mb-2 mb-md-0">
@@ -66,14 +66,65 @@
         <a class="btn btn-primary" href="cerrar_sesion.php" role="button">Cerrar sesión</a>
       </div>
     </header>
-<div class="row" style="height: 400px; background-color: #FFFFFF">
-        <div class="col-8 d-flex justify-content-center" style="height: 300px; background-color: #FFFFFF">
-            <div id="chart_div"></div>
+    <div class="row" style="background-color: #FFFFFF">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="col">
+                    <?php
+                        require_once('conexion.php');
+                    
+                        ?>   
+                        <table class="table table-bordered">
+                            <?php
+
+                            require_once('conexion.php');
+
+                            session_start(); 
+                            $Rut = $_SESSION['rut'];
+
+                            $sql="SELECT * FROM ficha join usuario";
+                            $result=mysqli_query($conexion, $sql);
+
+                            while($mostrar=mysqli_fetch_array($result)){
+                            ?>
+                    
+                            <div class="row">
+                                <div class="col-10 mt-4">
+                                <tr>
+                                    <td>Nombre completo:
+                                    <h6><?php echo $mostrar['nombres']?></h6></td>
+                                    <td>Apellido paterno:
+                                    <h6><?php echo $mostrar['apellido1']?></h6></td>
+                                    <td>Apellido materno:
+                                    <h6><?php echo $mostrar['apellido2']?></h6></td>
+                                    <td>Fecha de nacimiento:
+                                    <h6><?php echo $mostrar['fechaNacim']?></h6></td>
+                                    <td>Ciudad de residensia:
+                                    <h6><?php echo $mostrar['ciudadResid']?></h6></td>
+                                    <td>Correo:
+                                    <h6><?php echo $mostrar['correo']?></h6></td>
+                                    <td>Alergias:
+                                    <h6><?php echo $mostrar['alergias']?></h6></td>
+                                    <td>Antecedentes:
+                                    <h6><?php echo $mostrar['antecedentes']?></h6></td>
+                                    <td>Enfermedades Cronicas:
+                                    <h6><?php echo $mostrar['enfermedadesCroni']?></h6></td>
+                                    <td>Medicamento:
+                                    <h6><?php echo $mostrar['medicamento']?></h6></td>
+                                    </tr>
+                                </div>
+                            </div>
+                            <?php
+                            }
+                            ?>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-11"></div>
+            </div>
         </div>
-        <div class="col-4" style="height: 300px">
-            <div id="piechart" style="width: 400px; height: 300px;"></div>
-        </div>
-</div>
+    </div>
 <?php
   include_once("footer.php");
 ?>

@@ -10,10 +10,11 @@
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </head>
 <body>
+<footer class="footer mt-auto py-3">
 <div class="container">
-<footer class="py-3 my-4">
 <p class="text-center text-body-secondary">&copy; 2023, Hospital Salud Plus</p>
-</footer>
+<p class="text-center text-body-secondary">&copy; h_salud_plus@gmail.com || +56987652354</p>
 </div>
+</footer>
 </body>
 </html>

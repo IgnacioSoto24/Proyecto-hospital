@@ -107,9 +107,7 @@
             </div>
         </div>
     </div>
-<?php
-  include_once("noticias.php");
-?>
+
 <?php
   include_once("footer.php");
 ?>

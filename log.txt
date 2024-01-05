@@ -12,3 +12,13 @@
 [Aviso][30-12-2023 00:44:27]: 19615260-1 eliminó Noticia: 0
 [Aviso][30-12-2023 00:45:38]: Agregó Noticia: , 19615260-1
 [Aviso][30-12-2023 00:45:57]: 19615260-1 eliminó Noticia: 0
+[Aviso][02-01-2024 20:05:14]:Inicio sesion Administrador con el rut: 19615260-1
+[Aviso][02-01-2024 20:05:39]: Agregó Noticia: , 19615260-1
+[Aviso][02-01-2024 20:06:59]: 19615260-1 eliminó Noticia: 0
+[Aviso][02-01-2024 20:07:46]:19615260-1 Registro a: 16546963-2 con cargo de Medico
+[Aviso][02-01-2024 20:08:13]:Inicio sesion Medico con el rut: 16546963-2
+[Aviso][02-01-2024 20:13:19]:Inicio sesion Administrador con el rut: 19615260-1
+[Aviso][02-01-2024 20:32:20]:Inicio sesion Medico con el rut: 16546963-2
+[Aviso][02-01-2024 21:22:02]:Inicio sesion Administrador con el rut: 19615260-1
+[Aviso][02-01-2024 21:22:17]: Agregó Noticia: , 19615260-1
+[Aviso][04-01-2024 03:05:12]:Inicio sesion Administrador con el rut: 19615260-1

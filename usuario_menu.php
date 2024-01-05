@@ -21,7 +21,7 @@
 <body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
-<div class="container-fluid" style="background-color: #D3D3D3">
+
 <div class="container">
     <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
       <div class="col-md-3 mb-2 mb-md-0">
@@ -80,9 +80,49 @@
     </div>
   </div>
 </div>
-<?php
-  include_once("noticias.php");
-?>
+<div class="row" style="background-color: #FFFFFF">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="col">
+                    <?php
+                        //Conexion con bd
+                        require_once('conexion.php');
+                    
+                        ?>   
+                        <table class="table table-bordered">
+                            <?php
+                            //Seleciono todo de la tabla noticia
+                            $sql="SELECT * FROM noticia";
+                            $result=mysqli_query($conexion, $sql);
+
+                            //ordeno imprimir
+                            while($mostrar=mysqli_fetch_array($result)){
+                            ?>
+
+                            <div class="row">
+                                <div class="col-2 mt-2">
+                                    <img width="250px" height="250px" src="data:foto/jpg;base64,<?php echo base64_encode($mostrar['imagen']);?>"/>
+                                </div>
+                                <div class="col-10 mt-4">
+                                    <h1><?php echo $mostrar['id']?></h1>
+                                    <h2><?php echo $mostrar['titulo']?></h2>
+                                    <h5><?php echo $mostrar['cuerpo']?></h5>
+                                    <h6><?php echo $mostrar['categoria']?></h6>
+                                    <h6><?php echo $mostrar['autor']?></h6>
+                                </div>
+                                <hr>
+                            </div>
+                            <?php
+                            }
+                            ?>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-11"></div>
+            </div>
+        </div>
+    </div>
 <?php
   include_once("footer.php");
 ?>
