@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 30-12-2023 a las 00:47:27
+-- Tiempo de generación: 05-01-2024 a las 04:10:37
 -- Versión del servidor: 10.4.28-MariaDB
 -- Versión de PHP: 8.2.4
 
@@ -57,6 +57,13 @@ CREATE TABLE `noticia` (
   `titulo` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+--
+-- Volcado de datos para la tabla `noticia`
+--
+
+INSERT INTO `noticia` (`autor`, `categoria`, `cuerpo`, `id`, `imagen`, `titulo`) VALUES
+('Portal Prensa Salud | Grupo Prensa Digital', 'Salud', 'SANTIAGO, diciembre de 2023.-  Con la idea de promover la salud preventiva, Mediclic incorporó las n', 0, 0x6e6f7469636961312e6a7067, 'Mediclic incorpora personal trainer y meditación como nuevas especialidades médicas');
+
 -- --------------------------------------------------------
 
 --
@@ -78,6 +85,7 @@ CREATE TABLE `personal` (
 
 INSERT INTO `personal` (`nombres`, `apellido1`, `apellido2`, `cargo`, `contraseña`, `rut`) VALUES
 ('Jose Luis', 'Soto', 'Cifuentes', 'Medico', '$2y$10$0Tf.NMWmyj.PMFduiCoAFerKpCEamhmcVPXOCQ047KML34YiRzO2W', '11546654-2'),
+('Luisa', 'Ceballos', 'Tizka', 'Medico', '$2y$10$cVwPGXSaNr25I4XBy/Zcy.yQvgukX4bwK1oDtG9FM.WjeIZ5sufBC', '16546963-2'),
 ('Ignacio', 'Soto', 'Ceballos', 'Administrador', '$2y$10$Yw.yT/Xg92BMy6El2sLgDubR5jIGsVTteZ6.8rBZT0QQ76Jy5oH/u', '19615260-1');
 
 -- --------------------------------------------------------
